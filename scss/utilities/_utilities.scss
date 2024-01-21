@@ -1,0 +1,18 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+.font-11-normal {
+  @include font($primaryfont, 11, normal, normal, 18);
+}
+
+.parallax {
+  position: relative;
+  @include translateY(size(48));
+  opacity: 1;
+  transition: 1s all ease;
+
+  &.active {
+    @include translateY(0);
+    opacity: 1;
+  }
+}

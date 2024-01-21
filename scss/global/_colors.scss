@@ -1,0 +1,97 @@
+$time: 350ms;
+
+// DEFAULT COLORS
+$white: hsl(0, 0%, 100%); //#ffffff
+$black: hsl(0, 0%, 0%); //#000000
+
+// THEME-COLORS
+
+// BACKGROUND-COLORS
+$inputbg: #FAFAFA;
+
+// TEXT-COLORS
+$black-950: #050505;
+$black-900: #3D3D3D;
+$black-700: #4F4F4F;
+$black-300: #B0B0B0;
+
+$neutral-50: #F5F5F6;
+$neutral-100: #E6E6E7;
+$neutral-200: #CFCFD2;
+$neutral-300: #AEAEB2;
+$neutral-400: #85868B;
+$neutral-500: #6A6B70;
+$neutral-600: #5B5B5F;
+$neutral-700: #4D4D51;
+$neutral-800: #444546;
+$neutral-900: #3C3C3D;
+$neutral-950: #19191A;
+
+$green-50: #EFFBEA;
+$green-100: #DBF5D2;
+$green-200: #BAECAA;
+$green-300: #8FDE78;
+$green-400: #68CD4E;
+$green-500: #49B530;
+$green-600: #348E22;
+$green-700: #2A6D1E;
+$green-800: #2A6D1E;
+$green-900: #26571D;
+$green-950: #0E280B;
+
+$blue-green-50: #F1F9FE;
+$blue-green-100: #E2F1FC;
+$blue-green-200: #BFE3F8;
+$blue-green-300: #86CDF3;
+$blue-green-400: #45B4EB;
+$blue-green-500: #1C94D1;
+$blue-green-600: #107CB9;
+$blue-green-700: #0E6296;
+$blue-green-800: #10537C;
+$blue-green-900: #134667;
+$blue-green-950: #0D2D44;
+
+// GRADIENT-COLORS
+$normalgradient: linear-gradient(180deg, #1D95D2 -10%, #47B43A 110%);
+$hovergradient: linear-gradient(94deg, #1C94D1 7.24%, #49B530 100%);
+
+$gray: #A9A9A9;
+$lightgray: #F5F5F5;
+$paynesgray: #5D5F71;
+$puregreen: #26BF6A;
+$green: #0A8943;
+$greenmiddle: #2DCA73;
+$lightgreen: #DDF7E9;
+$red: #EA0C0C;
+$redgray: #EF4444;
+$elmbrownred: #F8F0E6;
+$pinklight: #FFEBEB;
+$yellow: #FDBB2C;
+$pureyellow: #F9851A;
+$purple: #9F7AEA;
+$lightpurple: #F6F2FD;
+$bluelightgreen: #E9F8F8;
+$blackcolor: #000520;
+$coffee: #F2EFE9;
+$brightblue: #3786FC;
+$bluelight: #EBF3FF;
+$whiteblue: #F8F9FB;
+$testblue: #6687A3;
+$aliceblue: #EBF3FF;
+$hawkesblue: #D7DFE9;
+$olive: #9CA23D;
+$lightpink: #FDCECE;
+$sweet: #FEE2B1;
+$lavender: #E6E8F8;
+
+
+$danger: hsl(0, 91%, 54%); //#F51F1F
+
+// BORDER-COLORS
+$border-black-50: #F6F6F6;
+$inputborder: #F1F1F1;
+
+// SHADOWS
+
+// BOX-SHADOWS
+$authshadow: 0 0 .25rem 0 rgba($black, 0.20);
