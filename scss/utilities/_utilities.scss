@@ -1,8 +1,30 @@
 @use "../global" as *;
 @use "../partials" as *;
 
-.font-11-normal {
-  @include font($primaryfont, 11, normal, normal, 18);
+.brandlogo {
+  width: size(150);
+  height: size(37);
+  @include flex-center;
+  overflow: hidden;
+
+  @include breakpoint(mobile768) {
+    width: size(212);
+  }
+
+  img {
+    object-fit: contain;
+  }
+}
+
+.footerlogo {
+  width: size(212);
+  height: size(37);
+  @include flex-center;
+  overflow: hidden;
+
+  img {
+    object-fit: contain;
+  }
 }
 
 .parallax {

@@ -67,3 +67,20 @@ button,
     color: $blue-green-600;
   }
 }
+
+.btn-hamburger {
+  background: $white;
+  @include border(solid, 1, $iconborder);
+  @include radius(10);
+  @include flex-center;
+  @include square(40);
+  padding: size(8);
+
+  @include hover {
+    svg {
+      path {
+        fill: $blue-green-600;
+      }
+    }
+  }
+}
