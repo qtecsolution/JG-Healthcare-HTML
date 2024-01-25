@@ -974,6 +974,66 @@ table tr td {
   line-height: 2.75;
 }
 
+.listsocial {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.listsocial-link {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.listsocial-link:not([disabled]):hover svg path {
+  fill: #107CB9;
+}
+
+.mycontactlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.mycontactlist-item {
+  color: #5B5B5F;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625;
+}
+.mycontactlist-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mycontactlist-link .listicon {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.mycontactlist-link .listtext {
+  color: #5B5B5F;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625;
+}
+.mycontactlist-link:not([disabled]):hover .listicon svg path {
+  fill: #107CB9;
+}
+.mycontactlist-link:not([disabled]):hover .listtext {
+  color: #107CB9;
+}
+
 .customcheck .checkprivacy:checked ~ .checklabel::after {
   opacity: 1;
   visibility: visible;
@@ -1193,6 +1253,89 @@ table tr td {
   .contactmain {
     padding: 7.5rem 0.5rem;
   }
+}
+
+.contactdetails-content {
+  border: solid 0.0625rem #F1F1F1;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.contactdetails .contactmap {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+@media screen and (min-width: 48rem) {
+  .contactdetails .contactmap {
+    height: 26.25rem;
+  }
+}
+.contactdetails .contactmap iframe {
+  width: 100%;
+  height: 100%;
+}
+.contactdetails .contactinfo {
+  width: 100%;
+  position: relative;
+  padding: 1.5rem;
+}
+@media screen and (min-width: 48rem) {
+  .contactdetails .contactinfo {
+    height: 26.25rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .contactdetails .contactinfo {
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 87.5rem) {
+  .contactdetails .contactinfo {
+    padding: 4rem;
+  }
+}
+.contactdetails .contactinfo-header {
+  position: relative;
+  z-index: 100;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.contactdetails .contactinfo-header .contactinfotitle {
+  color: #19191A;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.contactdetails .contactinfo-body {
+  border-top: solid 0.0625rem #5B5B5F;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  position: relative;
+  z-index: 100;
+}
+.contactdetails .contactinfo-body .socialtitle {
+  color: #19191A;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.contactdetails .contactinfo .overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.contactdetails .contactinfo .overlay img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .brandlogo {
