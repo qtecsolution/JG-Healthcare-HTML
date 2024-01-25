@@ -1,2 +1,57 @@
 @use "../global" as *;
 @use "../partials" as *;
+
+.contactbanner {
+  @include w100;
+  height: size(247);
+  @include flex-center-vert;
+  text-align: center;
+  position: relative;
+
+  &-content {
+    @include flex-center-column;
+    gap: size(10);
+    padding-inline: size(8);
+    position: relative;
+    z-index: 10;
+
+    .bannertitle {
+      color: $blue-green-900;
+      font-size: size(24);
+      font-weight: 700;
+
+      @include breakpoint(tab992) {
+        font-size: size(30);
+      }
+
+      @include breakpoint(desktop1400) {
+        font-size: size(36);
+      }
+    }
+
+    .contacttext {
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 400;
+
+      @include breakpoint(tab992) {
+        font-size: size(18);
+      }
+
+      @include breakpoint(desktop1400) {
+        font-size: size(20);
+      }
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    img {
+      @include wh100;
+      object-fit: cover;
+    }
+  }
+}
