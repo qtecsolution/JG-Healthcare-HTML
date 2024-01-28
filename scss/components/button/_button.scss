@@ -57,6 +57,22 @@ button,
   }
 }
 
+.btn-checkup {
+  @include setBgColor($blue-green-500, $white);
+  @include border(solid, 2, $blue-green-500);
+  @include radius(8);
+  @include flex-center;
+  font-size: size(16);
+  font-weight: 500;
+  width: size(148);
+  height: size(48);
+  padding: size(16);
+
+  @include hover {
+    @include setBgColor($white, $blue-green-500);
+  }
+}
+
 .btn-resend {
   color: $neutral-950;
   font-size: size(13);
@@ -69,6 +85,23 @@ button,
 }
 
 .btn-hamburger {
+  background: $white;
+  @include border(solid, 1, $iconborder);
+  @include radius(10);
+  @include flex-center;
+  @include square(40);
+  padding: size(8);
+
+  @include hover {
+    svg {
+      path {
+        fill: $blue-green-600;
+      }
+    }
+  }
+}
+
+.btn-menu {
   background: $white;
   @include border(solid, 1, $iconborder);
   @include radius(10);

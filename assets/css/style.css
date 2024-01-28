@@ -354,6 +354,25 @@ button:focus,
   stroke: #1C94D1;
 }
 
+.btn-checkup {
+  background: #1C94D1;
+  color: hsl(0, 0%, 100%);
+  border: solid 0.125rem #1C94D1;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 9.25rem;
+  height: 3rem;
+  padding: 1rem;
+}
+.btn-checkup:not([disabled]):hover {
+  background: hsl(0, 0%, 100%);
+  color: #1C94D1;
+}
+
 .btn-resend {
   color: #19191A;
   font-size: 0.8125rem;
@@ -376,6 +395,21 @@ button:focus,
   padding: 0.5rem;
 }
 .btn-hamburger:not([disabled]):hover svg path {
+  fill: #107CB9;
+}
+
+.btn-menu {
+  background: hsl(0, 0%, 100%);
+  border: solid 0.0625rem rgba(18, 20, 29, 0.1);
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+.btn-menu:not([disabled]):hover svg path {
   fill: #107CB9;
 }
 
@@ -916,6 +950,73 @@ table tr td {
   z-index: 10;
 }
 
+.accountform {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.inputbox .inputlabel {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #5D5F67;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.inputbox .inputlabel .mylabeltext {
+  color: inherit;
+  font: inherit;
+}
+.inputbox .inputlabel .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.inputbox .fieldbox {
+  background: #F6F6F6;
+  border: solid 0.0625rem #E6E6E6;
+  border-radius: 0.5rem;
+  position: relative;
+  height: 3rem;
+  transition: all 350ms ease-in-out;
+}
+.inputbox .fieldbox .inputfield {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0rem;
+}
+.inputbox .fieldbox .changefield {
+  width: calc(100% - 4.375rem);
+  margin-right: auto;
+}
+.inputbox .fieldbox .btn-change {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.125rem;
+  z-index: 100;
+}
+.inputbox .fieldbox .btn-change:not([disabled]):hover {
+  color: #0E6296;
+}
+.inputbox .fieldbox:focus-within {
+  border-color: #107CB9;
+}
+
 .desktopmenu {
   background: #10537C;
   display: flex;
@@ -1132,6 +1233,46 @@ table tr td {
   color: #107CB9;
 }
 
+.sidelist {
+  background: hsl(0, 0%, 100%);
+  border: solid 0.0625rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.sidelist-link {
+  background: hsl(0, 0%, 100%);
+  color: #7D7F85;
+  border-bottom: solid 0.0625rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+@media screen and (min-width: 87.5rem) {
+  .sidelist-link {
+    font-size: 1.125rem;
+  }
+}
+.sidelist-link:hover:not(.active) {
+  background: #E2F1FC;
+  color: #0E6296;
+  font-weight: 500;
+}
+.sidelist-link.active {
+  background: #E2F1FC;
+  color: #0E6296;
+  font-weight: 500;
+}
+.sidelist-item:last-of-type .sidelist-link {
+  border-bottom: 0;
+}
+
 .customcheck .checkprivacy:checked ~ .checklabel::after {
   opacity: 1;
   visibility: visible;
@@ -1273,6 +1414,47 @@ table tr td {
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.625;
+}
+
+.myaccount {
+  padding: 4rem 0.5rem;
+}
+@media screen and (min-width: 62rem) {
+  .myaccount {
+    padding: 6rem 0.5rem 8rem;
+  }
+}
+.myaccount .myaccountinfo {
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.myaccount .myaccountinfo-header {
+  background: #E2F1FC;
+  border-bottom: solid 0.0625rem #E2F1FC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.375rem;
+  padding-inline: 1.5rem;
+}
+.myaccount .myaccountinfo-header .acctitle {
+  color: #171F46;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.myaccount .myaccountinfo-body {
+  border: solid 0.0625rem rgba(0, 0, 0, 0.1);
+  border-top: 0;
+  padding: 1.5rem;
+}
+@media screen and (min-width: 62rem) {
+  .myaccount .myaccountinfo-body {
+    padding: 1.5rem 1.5rem 5rem;
+  }
 }
 
 .mediacenter {

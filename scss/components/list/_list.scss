@@ -219,3 +219,42 @@
     }
   }
 }
+
+.sidelist {
+  background: $white;
+  @include border(solid, 1, rgba($black, 0.10));
+  @include radius(20);
+  @include list-vertical;
+  overflow: hidden;
+
+  &-link {
+    @include setBgColor($white, $linkcolor);
+    @include border-single(bottom, solid, 1, rgba($black, 0.10));
+    @include flex-center-vert;
+    font-size: size(16);
+    font-weight: 400;
+    padding: size(16);
+
+    @include breakpoint(desktop1400) {
+      font-size: size(18);
+    }
+
+    &:hover:not(.active) {
+      @include setBgColor($blue-green-100, $blue-green-700);
+      font-weight: 500;
+    }
+
+    &.active {
+      @include setBgColor($blue-green-100, $blue-green-700);
+      font-weight: 500;
+    }
+  }
+
+  &-item {
+    &:last-of-type {
+      .sidelist-link {
+        border-bottom: 0;
+      }
+    }
+  }
+}
