@@ -37,6 +37,29 @@
       @include breakpoint(tab992) {
         padding: size(24) size(24) size(80);
       }
+
+      .table {
+        thead {
+          tr {
+            th {
+              color: $neutral-400;
+              font-size: size(13);
+              font-weight: 500;
+            }
+          }
+        }
+
+        tbody {
+          .name,
+          .phone,
+          .datetimetext {
+            color: $neutral-800;
+            font-size: size(11);
+            font-weight: 600;
+            line-height: 1.5;
+          }
+        }
+      }
     }
   }  
 }
