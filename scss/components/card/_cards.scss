@@ -1,6 +1,36 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
+.cardreview {
+  background: $white;
+  @include radius(24);
+  @include flex-column;
+  gap: size(32);
+  padding: size(30);
+  @include wh100;
+
+  &-body {
+    .ratingtext {
+      color: $neutral-950;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5;
+  
+      @include breakpoint(tab992) {
+        font-size: size(18);
+      }
+    }
+  }
+
+  &-footer {
+    @include flex-center-vert;
+    gap: size(16);
+
+    
+  }
+}
+
 .cardlike {
   background: $whitelinear;
   @include border(solid, 1, $inputborder);

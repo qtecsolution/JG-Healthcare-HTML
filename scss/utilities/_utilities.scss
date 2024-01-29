@@ -27,6 +27,20 @@
   }
 }
 
+.feedbacklink {
+  color: $white;
+  @include border-single(bottom, solid, 1.5, $white);
+  font-size: size(16);
+  font-weight: 700;
+  line-height: 1.75;
+  @include transitionsall;
+
+  @include hover {
+    border-color: $blue-green-100;
+    color: $blue-green-100;
+  }
+}
+
 .parallax {
   position: relative;
   @include translateY(size(48));

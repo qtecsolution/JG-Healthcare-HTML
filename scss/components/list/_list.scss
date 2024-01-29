@@ -258,3 +258,17 @@
     }
   }
 }
+
+.reviewlist {
+  @include list-horizontal;
+
+  &-item {
+    @include square(24);
+
+    svg {
+      path {
+        fill: $ratingstarbg;
+      }
+    }
+  }
+}
