@@ -1,2 +1,16 @@
 @use "../global" as *;
 @use "../partials" as *;
+
+.whatlike {
+  background: $likesectionbg;
+  padding: size(64) size(8);
+  
+  @include breakpoint(tab992) {
+    padding: size(104) size(8);
+  }
+
+  &-content {
+    @include flex-column;
+    gap: size(36);
+  }
+}

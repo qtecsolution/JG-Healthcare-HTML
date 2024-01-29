@@ -9,6 +9,7 @@ $black: hsl(0, 0%, 0%); //#000000
 // BACKGROUND-COLORS
 $inputbg: #FAFAFA;
 $footerbg: #12141D;
+$likesectionbg: #EAEDF5; //#EAEDF5
 
 $fb-background: #1877F2;
 $twitter-background: #1DA1F2;
@@ -62,6 +63,7 @@ $blue-green-900: #134667;
 $blue-green-950: #0D2D44;
 
 // GRADIENT-COLORS
+$whitelinear: linear-gradient(97deg, rgba($white, 0.95) 1.12%, $white 98.93%);
 $normalgradient: linear-gradient(180deg, #1D95D2 -10%, #47B43A 110%);
 $hovergradient: linear-gradient(94deg, #1C94D1 7.24%, #49B530 100%);
 

@@ -1,6 +1,36 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
+.cardlike {
+  background: $whitelinear;
+  @include border(solid, 1, $inputborder);
+  @include radius(16);
+  @include flex-center-column;
+  gap: size(24);
+  @include w100;
+  height: size(194);
+  text-align: center;
+
+  &-icon {
+    @include square(40);
+    @include flex-center;
+    overflow: hidden;
+
+    img {
+      @include wh100;
+    }
+  }
+
+  &-detail {
+    .cardtitle {
+      color: $neutral-950;
+      font-size: size(21);
+      font-weight: 600;
+      line-height: 1;
+    }
+  }
+}
+
 .cardimage {
   @include border(solid, 1, $inputborder);
   @include radius(24);

@@ -413,6 +413,38 @@ button:focus,
   fill: #107CB9;
 }
 
+.cardlike {
+  background: linear-gradient(97deg, rgba(255, 255, 255, 0.95) 1.12%, hsl(0, 0%, 100%) 98.93%);
+  border: solid 0.0625rem #F1F1F1;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  height: 12.125rem;
+  text-align: center;
+}
+.cardlike-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.cardlike-icon img {
+  width: 100%;
+  height: 100%;
+}
+.cardlike-detail .cardtitle {
+  color: #19191A;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
 .cardimage {
   border: solid 0.0625rem #F1F1F1;
   border-radius: 1.5rem;
@@ -1600,6 +1632,21 @@ table tr td {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.whatlike {
+  background: #EAEDF5;
+  padding: 4rem 0.5rem;
+}
+@media screen and (min-width: 62rem) {
+  .whatlike {
+    padding: 6.5rem 0.5rem;
+  }
+}
+.whatlike-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
 }
 
 .mediacenter {
