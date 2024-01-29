@@ -413,6 +413,38 @@ button:focus,
   fill: #107CB9;
 }
 
+.btn-call {
+  display: flex;
+  align-items: center;
+  gap: 0.6875rem;
+}
+.btn-call .linkicon {
+  border: solid 0.0625rem rgba(18, 20, 29, 0.1);
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+.btn-call .linkinfo {
+  display: flex;
+  flex-direction: column;
+}
+.btn-call .linkinfo .linktitle,
+.btn-call .linkinfo .linktext {
+  color: #19191A;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+.btn-call .linkinfo .linktitle {
+  font-weight: 500;
+}
+.btn-call .linkinfo .linktext {
+  font-weight: 600;
+}
+
 .cardreview {
   background: hsl(0, 0%, 100%);
   border-radius: 1.5rem;
@@ -1739,6 +1771,104 @@ table tr td {
 }
 .onlinereport-body .reportlink {
   width: 13.75rem;
+}
+
+.cardsection .leftcard,
+.cardsection .rightcard {
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2.5rem;
+  padding: 2rem;
+  height: 100%;
+}
+.cardsection .leftcard .cardcontent,
+.cardsection .rightcard .cardcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media screen and (min-width: 48rem) {
+  .cardsection .leftcard .cardcontent,
+  .cardsection .rightcard .cardcontent {
+    max-width: 18.375rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .cardsection .leftcard .cardcontent,
+  .cardsection .rightcard .cardcontent {
+    gap: 5rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .cardsection .leftcard,
+  .cardsection .rightcard {
+    padding: 5rem 2.75rem;
+  }
+}
+.cardsection .leftcard-header,
+.cardsection .rightcard-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+@media screen and (min-width: 62rem) {
+  .cardsection .rightcard .cardcontent {
+    margin-left: auto;
+  }
+}
+
+.comingsoon-content {
+  background: #F2F1FA;
+  border-radius: 2.5rem;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 48rem) {
+  .comingsoon-content {
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .comingsoon-content {
+    padding: 2rem 4rem 3rem;
+  }
+}
+.comingsoon-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+}
+.comingsoon-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+.comingsoon-header .secbadge {
+  color: #862BBE;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.comingsoon-header .comingtitle {
+  color: #19191A;
+  font-weight: 700;
+}
+.comingsoon-header .textbox {
+  max-width: 36.625rem;
+}
+.comingsoon-header .comingtext {
+  color: #3C3C3D;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.comingsoon-body .learnlink {
+  width: 13.75rem;
+}
+.comingsoon-thumbnail {
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .reviewsec {

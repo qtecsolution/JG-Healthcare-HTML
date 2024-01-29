@@ -69,6 +69,107 @@
   }
 }
 
+.cardsection {
+  .leftcard,
+  .rightcard {
+    background-repeat: no-repeat;
+    background-position: center;
+    @include radius(40);
+    padding: size(32);
+    @include h100;
+
+    .cardcontent {
+      @include flex-column;
+      gap: size(48);
+
+      @include breakpoint(mobile768) {
+        max-width: size(294);
+      }
+
+      @include breakpoint(tab992) {
+        gap: size(80);
+      }
+    }
+
+    @include breakpoint(mobile768) {
+      padding: size(80) size(44);
+    }
+
+    &-header {
+      @include flex-column;
+      gap: size(14);
+    }
+  }
+
+  .rightcard {
+    .cardcontent {
+      @include breakpoint(tab992) {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.comingsoon {
+  &-content {
+    background: $sectionbg-1;
+    @include radius(40);
+    padding: size(24);
+    overflow: hidden;
+
+    @include breakpoint(mobile768) {
+      padding: size(48);
+    }
+
+    @include breakpoint(tab992) {
+      padding: size(32) size(64) size(48);
+    }
+  }
+
+  &-details {
+    @include flex-column;
+    gap: size(34);
+  }
+
+  &-header {
+    @include flex-column;
+    gap: size(14);
+
+    .secbadge {
+      color: $purple;
+      font-size: size(18);
+      font-weight: 600;
+    }
+
+    .comingtitle {
+      color: $neutral-950;
+      font-weight: 700;
+    }
+
+    .textbox {
+      max-width: size(586);
+    }
+
+    .comingtext {
+      color: $neutral-900;
+      font-size: size(16);
+      font-weight: 400;
+    }
+  }
+  
+  &-body {
+    .learnlink {
+      width: size(220);
+    }
+  }
+
+  &-thumbnail {
+    @include radius(16);
+    @include flex-center;
+    overflow: hidden;
+  }
+}
+
 .reviewsec {
   background: $reviewbg;
   padding: size(64) size(8);
