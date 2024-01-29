@@ -1,6 +1,67 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
+.cardhealth {
+  @include flex-column;
+  gap: size(74);
+  @include radius(40);
+  overflow: hidden;
+  padding: size(44) size(32) size(40);
+
+  &-header {
+    @include flex-center-vert;
+    gap: size(14);
+
+    .healthicon {
+      @include square(50);
+      @include flex-center;
+      overflow: hidden;
+    }
+  
+    .healthtitle {
+      color: $neutral-950;
+      font-size: size(21);
+      font-weight: 600;
+      line-height: 1;
+    }
+  }
+
+  &-body {
+    @include flex-column;
+    gap: size(14);
+
+    .textbox {
+      max-width: size(240);
+    }
+
+    .healthtext {
+      color: $neutral-900;
+      font-size: size(13);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .healthlink {
+      color: $blue-green-500;
+      font-size: size(16);
+      font-weight: 600;
+      @include transitionsall;
+
+      @include hover {
+        color: $blue-green-900;
+      }
+    }
+  }
+
+  &.health-1 {
+    background: $blue-green-50;
+  }
+
+  &.health-2 {
+    background: $green-50;
+  }
+}
+
 .cardreview {
   background: $white;
   @include radius(24);
@@ -27,7 +88,7 @@
     @include flex-center-vert;
     gap: size(16);
 
-    
+
   }
 }
 

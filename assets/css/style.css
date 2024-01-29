@@ -445,6 +445,63 @@ button:focus,
   font-weight: 600;
 }
 
+.cardhealth {
+  display: flex;
+  flex-direction: column;
+  gap: 4.625rem;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  padding: 2.75rem 2rem 2.5rem;
+}
+.cardhealth-header {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+.cardhealth-header .healthicon {
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.cardhealth-header .healthtitle {
+  color: #19191A;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.cardhealth-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+.cardhealth-body .textbox {
+  max-width: 15rem;
+}
+.cardhealth-body .healthtext {
+  color: #3C3C3D;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.cardhealth-body .healthlink {
+  color: #1C94D1;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 350ms ease-in-out;
+}
+.cardhealth-body .healthlink:not([disabled]):hover {
+  color: #134667;
+}
+.cardhealth.health-1 {
+  background: #F1F9FE;
+}
+.cardhealth.health-2 {
+  background: #EFFBEA;
+}
+
 .cardreview {
   background: hsl(0, 0%, 100%);
   border-radius: 1.5rem;
@@ -1707,6 +1764,120 @@ table tr td {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.healthpackage {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 1.5rem 0.5rem;
+}
+@media screen and (min-width: 48rem) {
+  .healthpackage {
+    padding: 3rem 0.5rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .healthpackage {
+    padding: 7.875rem 0.5rem 8.375rem;
+  }
+}
+.healthpackage .helthbadge {
+  color: #1C94D1;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.healthpackage .healthtitle {
+  color: #19191A;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.healthpackage .healthlink {
+  width: 13.75rem;
+}
+.healthpackage .healthright {
+  background: #134667;
+  border-radius: 2.5rem;
+  padding: 2rem;
+  overflow: hidden;
+  height: 100%;
+}
+.healthpackage .healthright .rightinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4.625rem;
+}
+.healthpackage .healthright .rightinfo-header {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+.healthpackage .healthright .rightinfo-header .healthicon {
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.healthpackage .healthright .rightinfo-header .healthtitle {
+  color: #19191A;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.healthpackage .healthright .rightinfo-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+.healthpackage .healthright .rightinfo-body .textbox {
+  max-width: 15rem;
+}
+.healthpackage .healthright .rightinfo-body .healthtext {
+  color: #3C3C3D;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.healthpackage .healthright .rightinfo-body .healthlink {
+  color: #86CDF3;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 350ms ease-in-out;
+}
+.healthpackage .healthright .rightinfo-body .healthlink:not([disabled]):hover {
+  color: #45B4EB;
+}
+.healthpackage .healthright .healthicon {
+  width: 4.25rem;
+  height: 3.125rem;
+}
+.healthpackage .healthright .healthicon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.healthpackage .healthright .healththumb {
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+@media screen and (min-width: 112.5rem) {
+  .healthpackage .healthright .healththumb {
+    width: 15.75rem;
+    height: 15.1875rem;
+  }
+}
+.healthpackage .healthright .healththumb img {
+  width: 100%;
+  height: 100%;
 }
 
 .homemain {
