@@ -58,6 +58,22 @@
             font-weight: 600;
             line-height: 1.5;
           }
+
+          .profinfo {
+            max-width: size(156);
+          }
+
+          .profname {
+            font-size: size(11);
+            color: $neutral-800;
+            font-weight: 600;
+          }
+
+          .btn-action {
+            @include square(20);
+            @include flex-center;
+            overflow: hidden;
+          }
         }
       }
     }
