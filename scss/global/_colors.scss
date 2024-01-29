@@ -1,15 +1,15 @@
 $time: 350ms;
 
 // DEFAULT COLORS
-$white: hsl(0, 0%, 100%); //#ffffff
-$black: hsl(0, 0%, 0%); //#000000
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
 
 // THEME-COLORS
 
 // BACKGROUND-COLORS
 $inputbg: #FAFAFA;
 $footerbg: #12141D;
-$likesectionbg: #EAEDF5; //#EAEDF5
+$likesectionbg: #EAEDF5;
 
 $fb-background: #1877F2;
 $twitter-background: #1DA1F2;
@@ -19,6 +19,7 @@ $github-background: #171515;
 $socialiconbg: #27272A;
 $socialhoverbg: #2563EB;
 $labelcolor: #5D5F67;
+$sliderbadge: #E28110;
 
 // TEXT-COLORS
 $black-950: #050505;
@@ -106,7 +107,18 @@ $titlecolor: #171F46;
 $ratingstarbg: #F59E0B;
 $purple: #862BBE;
 
-$danger: hsl(0, 91%, 54%); //#F51F1F
+$badgetext-1: #3C869C;
+$badgebg-1: #DDF7FF;
+$badgetext-2: #6E6BDC;
+$badgebg-2: #ECE9FF;
+$badgetext-3: #E54172;
+$badgebg-3: #FFDDE1;
+$badgetext-4: #5563E2;
+$badgebg-4: #ECEFFA;
+$badgetext-5: #398A54;
+$badgebg-5: #E2F3D7;
+
+$danger: hsl(0, 91%, 54%);
 
 // BORDER-COLORS
 $border-black-50: #F6F6F6;

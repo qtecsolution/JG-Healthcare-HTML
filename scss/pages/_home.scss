@@ -116,6 +116,55 @@
   }
 }
 
+.autoslider {
+  background: $likesectionbg;
+  @include flex-column;
+  gap: size(40);
+  padding: size(24) size(0);
+
+  @include breakpoint(mobile768) {
+    padding: size(48) size(0);
+  }
+
+  @include breakpoint(tab992) {
+    padding: size(128) size(0) size(112);
+  }
+
+  &-header {
+    @include flex-center-column;
+    text-align: center;
+    padding-inline: size(8);
+
+    .sliderbadge {
+      color: $sliderbadge;
+      font-size: size(18);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+  
+    .slidertitle {
+      color: $neutral-950;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+  }
+
+  &-body {
+    @include flex-center-column;
+    gap: size(56);
+    
+    .autoslides {
+      @include w100;
+      @include flex-center-vert;
+      gap: size(24);
+    }
+
+    .findmore {
+      width: size(220);
+    }
+  }
+}
+
 .homemain {
   @include flex-column;
   gap: size(50);
