@@ -601,6 +601,32 @@ button:focus,
   overflow: hidden;
 }
 
+.emptybox {
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-inline: auto;
+  padding: 1.5rem 0rem;
+  text-align: center;
+}
+.emptybox .emptyicon {
+  width: 14.125rem;
+  height: 14.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.emptybox .emptytitle {
+  color: #6A6B70;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
 .header {
   background: hsl(0, 0%, 100%);
   border-bottom: solid 0.0625rem rgba(18, 20, 29, 0.1);

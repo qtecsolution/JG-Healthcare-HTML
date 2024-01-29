@@ -179,3 +179,25 @@
     }
   }
 }
+
+.emptybox {
+  width: size(240);
+  @include flex-center-column;
+  gap: size(8);
+  margin-inline: auto;
+  padding: size(24) size(0);
+  text-align: center;
+
+  .emptyicon {
+    @include square(226);
+    @include flex-center;
+    overflow: hidden;
+  }
+
+  .emptytitle {
+    color: $neutral-500;
+    font-size: size(16);
+    font-weight: 400;
+    line-height: 1.625;
+  }
+}
