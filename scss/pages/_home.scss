@@ -1,6 +1,74 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+.homemain {
+  @include flex-column;
+  gap: size(50);
+  padding: size(64) size(8);
+  
+  @include breakpoint(tab992) {
+    padding: size(104) size(8);
+  }
+  
+  @include breakpoint(desktop1400) {
+    padding: size(168) size(8) size(142);
+  }
+}
+
+.onlinereport {
+  &-content {
+    background-repeat: no-repeat;
+    background-position: center;
+    @include radius(40);
+    padding: size(24);
+
+    @include breakpoint(mobile768) {
+      padding: size(48);
+    }
+
+    @include breakpoint(tab992) {
+      padding: size(104) size(64);
+    }
+  }
+
+  &-details {
+    @include flex-column;
+    gap: size(34);
+  }
+
+  &-header {
+    @include flex-column;
+    gap: size(14);
+
+    .secbadge {
+      color: $purple;
+      font-size: size(18);
+      font-weight: 600;
+    }
+
+    .reporttitle {
+      color: $neutral-950;
+      font-weight: 700;
+    }
+
+    .textbox {
+      max-width: size(586);
+    }
+
+    .reportext {
+      color: $neutral-900;
+      font-size: size(16);
+      font-weight: 400;
+    }
+  }
+  
+  &-body {
+    .reportlink {
+      width: size(220);
+    }
+  }
+}
+
 .reviewsec {
   background: $reviewbg;
   padding: size(64) size(8);

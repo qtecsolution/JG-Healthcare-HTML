@@ -67,6 +67,11 @@ $whitelinear: linear-gradient(97deg, rgba($white, 0.95) 1.12%, $white 98.93%);
 $normalgradient: linear-gradient(180deg, #1D95D2 -10%, #47B43A 110%);
 $hovergradient: linear-gradient(94deg, #1C94D1 7.24%, #49B530 100%);
 $reviewbg: linear-gradient(101deg, #10537C 0%, #47B43A 99.27%);
+$sectionbg-gredient-1: linear-gradient(90deg, #FBEFFB 44.6%, rgba(242, 241, 250, 0.00) 70.18%);
+$sectionbg-gredient-2: linear-gradient(90deg, #E6F8E3 25.85%, rgba(230, 248, 227, 0.00) 103.62%);
+$sectionbg-gredient-3: linear-gradient(90deg, #DEF6FE 25.85%, rgba(222, 246, 254, 0.00) 103.62%);
+
+$sectionbg-1: #F2F1FA;
 
 $gray: #A9A9A9;
 $lightgray: #F5F5F5;
@@ -99,6 +104,7 @@ $lavender: #E6E8F8;
 $linkcolor: #7D7F85;
 $titlecolor: #171F46;
 $ratingstarbg: #F59E0B;
+$purple: #862BBE;
 
 $danger: hsl(0, 91%, 54%); //#F51F1F
 

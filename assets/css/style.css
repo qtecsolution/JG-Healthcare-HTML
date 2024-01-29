@@ -1677,6 +1677,70 @@ table tr td {
   overflow: hidden;
 }
 
+.homemain {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  padding: 4rem 0.5rem;
+}
+@media screen and (min-width: 62rem) {
+  .homemain {
+    padding: 6.5rem 0.5rem;
+  }
+}
+@media screen and (min-width: 87.5rem) {
+  .homemain {
+    padding: 10.5rem 0.5rem 8.875rem;
+  }
+}
+
+.onlinereport-content {
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2.5rem;
+  padding: 1.5rem;
+}
+@media screen and (min-width: 48rem) {
+  .onlinereport-content {
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .onlinereport-content {
+    padding: 6.5rem 4rem;
+  }
+}
+.onlinereport-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+}
+.onlinereport-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+.onlinereport-header .secbadge {
+  color: #862BBE;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.onlinereport-header .reporttitle {
+  color: #19191A;
+  font-weight: 700;
+}
+.onlinereport-header .textbox {
+  max-width: 36.625rem;
+}
+.onlinereport-header .reportext {
+  color: #3C3C3D;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.onlinereport-body .reportlink {
+  width: 13.75rem;
+}
+
 .reviewsec {
   background: linear-gradient(101deg, #10537C 0%, #47B43A 99.27%);
   padding: 4rem 0.5rem;
