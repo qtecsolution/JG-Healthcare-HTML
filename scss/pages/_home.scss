@@ -1,6 +1,37 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+.homeservices {
+  background: $white;
+  @include flex-column;
+  gap: size(40);
+  padding: size(24) size(8);
+
+  @include breakpoint(mobile768) {
+    padding: size(48) size(8);
+  }
+
+  @include breakpoint(tab992) {
+    padding: size(96) size(8);
+  }
+
+  &-header {
+    @include flex-center-column;
+    text-align: center;
+
+    .servicebadge {
+      color: $blue-green-500;
+      font-size: size(18);
+      font-weight: 600;
+    }
+
+    .servicetitle {
+      color: $neutral-950;
+      font-weight: 700;
+    }
+  }
+}
+
 .profoundmission {
   &-content {
     background-repeat: no-repeat;

@@ -458,6 +458,39 @@ button:focus,
   }
 }
 
+.cardservice {
+  background: linear-gradient(97deg, rgba(255, 255, 255, 0.95) 1.12%, #FFF 98.93%);
+  border: solid 0.0625rem #F1F1F1;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: hidden;
+  padding: 2.5rem 1.5rem 3rem;
+  text-align: center;
+}
+.cardservice-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.cardservice-body .servicetitle {
+  color: #19191A;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1;
+}
+@media screen and (min-width: 87.5rem) {
+  .cardservice-body .servicetitle {
+    font-size: 1.3125rem;
+  }
+}
+
 .cardslider {
   width: 19.125rem;
   background: hsl(0, 0%, 100%);
@@ -1851,6 +1884,40 @@ table tr td {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.homeservices {
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 1.5rem 0.5rem;
+}
+@media screen and (min-width: 48rem) {
+  .homeservices {
+    padding: 3rem 0.5rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .homeservices {
+    padding: 6rem 0.5rem;
+  }
+}
+.homeservices-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.homeservices-header .servicebadge {
+  color: #1C94D1;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.homeservices-header .servicetitle {
+  color: #19191A;
+  font-weight: 700;
 }
 
 .profoundmission-content {
