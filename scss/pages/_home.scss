@@ -1,6 +1,50 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+.profoundmission {
+  &-content {
+    background-repeat: no-repeat;
+    background-position: center;
+    @include radius(40);
+    padding: size(24);
+    overflow: hidden;
+
+    @include breakpoint(mobile768) {
+      padding: size(48);
+    }
+
+    @include breakpoint(tab992) {
+      padding: size(104) size(64);
+    }
+  }
+
+  &-header {
+    @include flex-column;
+    gap: size(14);
+
+    .aboutbadge {
+      color: $green-500;
+      font-size: size(18);
+      font-weight: 600;
+    }
+
+    .missiontitle {
+      color: $neutral-950;
+      font-weight: 700;
+    }
+
+    .textbox {
+      max-width: size(586);
+    }
+
+    .missiontext {
+      color: $neutral-900;
+      font-size: size(16);
+      font-weight: 400;
+    }
+  }
+}
+
 .healthpackage {
   @include flex-column;
   gap: size(40);
@@ -185,6 +229,7 @@
     background-position: center;
     @include radius(40);
     padding: size(24);
+    overflow: hidden;
 
     @include breakpoint(mobile768) {
       padding: size(48);

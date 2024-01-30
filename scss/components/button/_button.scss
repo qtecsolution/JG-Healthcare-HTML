@@ -149,3 +149,13 @@ button,
     }
   }
 }
+
+.btn-play {
+  @include square(96);
+  @include circle;
+  overflow: hidden;
+
+  @include breakpoint(tab992) {
+    @include square(183);
+  }
+}

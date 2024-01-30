@@ -445,6 +445,19 @@ button:focus,
   font-weight: 600;
 }
 
+.btn-play {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+@media screen and (min-width: 62rem) {
+  .btn-play {
+    width: 11.4375rem;
+    height: 11.4375rem;
+  }
+}
+
 .cardslider {
   width: 19.125rem;
   background: hsl(0, 0%, 100%);
@@ -1840,6 +1853,46 @@ table tr td {
   overflow: hidden;
 }
 
+.profoundmission-content {
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2.5rem;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 48rem) {
+  .profoundmission-content {
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .profoundmission-content {
+    padding: 6.5rem 4rem;
+  }
+}
+.profoundmission-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+.profoundmission-header .aboutbadge {
+  color: #49B530;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.profoundmission-header .missiontitle {
+  color: #19191A;
+  font-weight: 700;
+}
+.profoundmission-header .textbox {
+  max-width: 36.625rem;
+}
+.profoundmission-header .missiontext {
+  color: #3C3C3D;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .healthpackage {
   display: flex;
   flex-direction: column;
@@ -2029,6 +2082,7 @@ table tr td {
   background-position: center;
   border-radius: 2.5rem;
   padding: 1.5rem;
+  overflow: hidden;
 }
 @media screen and (min-width: 48rem) {
   .onlinereport-content {
