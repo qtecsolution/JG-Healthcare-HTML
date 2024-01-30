@@ -167,3 +167,53 @@
     }
   }
 }
+
+.searchform {
+  background: $white;
+  @include radius(10);
+  padding: size(8);
+  @include flex-center-vert;
+  height: size(65);
+
+  .searchfield {
+    color: $neutral-950;
+    font-size: size(16);
+    font-weight: 600;
+    padding: size(18) size(24);
+    width: calc(100% - size(60));
+    
+    @include breakpoint(mobile768) {
+      width: calc(100% - size(232));
+    }
+
+    &::placeholder {
+      color: rgba($neutral-950, 0.5);
+    }
+  }
+
+  .btn-search {
+    @include setBgColor($hovergradient, $white);
+    @include radius(8);
+    @include flex-center;
+    gap: size(8);
+    padding: size(16) size(20);
+    width: size(60);
+    height: size(55);
+    
+    @include breakpoint(mobile768) {
+      width: size(232);
+    }
+
+    .searchicon {
+      @include square(19);
+      @include flex-center;
+      overflow: hidden;
+    }
+
+    .searchtext {
+      color: inherit;
+      font-size: size(16);
+      font-weight: 600;
+    }
+  }
+}

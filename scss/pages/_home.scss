@@ -1,6 +1,86 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+.showcase {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include flex-center-vert;
+  min-height: 60vh;
+  padding: size(48) size(8);
+
+  @include breakpoint(tab992) {
+    min-height: 100vh;
+  }
+
+  .showcasedetails {
+    @include flex-center-column;
+    text-align: center;
+    gap: size(48);
+
+    @include breakpoint(tab992) {
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    &-header {
+      @include flex-column;
+      gap: size(20);
+
+      .textbox {
+        max-width: size(440);
+
+        .showcasetext {
+          color: rgba($neutral-900, 0.8);
+          font-size: size(16);
+          font-weight: 400;
+          
+          @include breakpoint(desktop1400) {
+            font-size: size(18);
+          }
+        }
+      }
+    }
+
+    &-body {
+      @include flex-column;
+      gap: size(8);
+
+      @include breakpoint(tab992) {
+        flex-direction: row;
+        align-items: center;
+        gap: size(16);
+      }
+
+      .info {
+        @include flex-column;
+        gap: size(8);
+
+        .countnumber {
+          color: $neutral-950;
+          font-size: size(30);
+          font-weight: 700;
+          letter-spacing: size(-1);
+
+          @include breakpoint(tab992) {
+            line-height: 1;
+          }
+        }
+
+        .counttext {
+          color: rgba($neutral-950, 0.6);
+          font-size: size(16);
+          font-weight: 400;
+
+          @include breakpoint(tab992) {
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
 .homeservices {
   background: $white;
   @include flex-column;
