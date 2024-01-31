@@ -31,6 +31,225 @@
   }
 }
 
+.cardhorizontal {
+  @include border(solid, 1, $inputborder);
+  background: $white;
+  @include flex-column;
+  @include radius(24);
+  overflow: hidden;
+  @include w100;
+
+  &-thumbnail {
+    @include border(solid, 10, $white);
+    @include radius(24);
+    @include flex-center;
+    @include w100;
+    // height: size(195);
+    overflow: hidden;
+
+    img {
+      @include wh100;
+    }
+  }
+
+  &-details {
+    @include flex-column;
+    align-items: flex-start;
+    padding: size(14) size(16) size(20);
+    gap: size(8);
+      
+    @include breakpoint(desktop1920) {
+      padding: size(14) size(24) size(24);
+    }
+
+    .cardbadge {
+      @include radius(39);
+      font-size: size(12);
+      font-weight: 500;
+      padding: size(7) size(11);
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      &.badge-1 {
+        @include setBgColor($badgebg-1, $badgetext-1);
+      }
+
+      &.badge-2 {
+        @include setBgColor($badgebg-2, $badgetext-2);
+      }
+
+      &.badge-3 {
+        @include setBgColor($badgebg-3, $badgetext-3);
+      }
+
+      &.badge-4 {
+        @include setBgColor($badgebg-4, $badgetext-4);
+      }
+
+      &.badge-5 {
+        @include setBgColor($badgebg-5, $badgetext-5);
+      }
+    }
+
+    .docname {
+      color: $neutral-950;
+      font-size: size(18);
+      font-weight: 600;
+      @include line-clamp;
+    }
+
+    .docpost {
+      color: rgba($neutral-950, 0.5);
+      font-size: size(14);
+      font-weight: 400;
+    }
+
+    .btn-viewprofile,
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      font-size: size(12);
+      height: size(36);
+      text-align: center;
+    }
+
+    .btn-viewprofile {
+      width: size(104);
+    }
+    
+
+    .btn-submit {
+      width: size(120);
+      padding: size(0);
+      
+      @include breakpoint(desktop1920) {
+        width: size(146);
+      }
+      
+      .text {
+        font-size: inherit;
+      }
+    }
+  }
+}
+
+.cardvertical {
+  @include border(solid, 1, $inputborder);
+  background: $white;
+  @include flex;
+  @include radius(24);
+  overflow: hidden;
+  @include w100;
+
+  &-thumbnail {
+    @include border(solid, 10, $white);
+    @include radius(24);
+    @include flex-center;
+    overflow: hidden;
+    width: size(152);
+
+    @include breakpoint(mobile768) {
+      width: size(304);
+    }
+
+    img {
+      @include wh100;
+    }
+  }
+
+  &-details {
+    @include flex-column;
+    align-items: flex-start;
+    padding: size(14);
+    gap: size(8);
+    width: calc(100% - size(152));
+
+    @include breakpoint(mobile768) {
+      width: calc(100% - size(304));
+      padding: size(40) size(24) size(32);
+    }
+
+    .cardbadge {
+      @include radius(39);
+      font-size: size(12);
+      font-weight: 500;
+      padding: size(7) size(11);
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      &.badge-1 {
+        @include setBgColor($badgebg-1, $badgetext-1);
+      }
+
+      &.badge-2 {
+        @include setBgColor($badgebg-2, $badgetext-2);
+      }
+
+      &.badge-3 {
+        @include setBgColor($badgebg-3, $badgetext-3);
+      }
+
+      &.badge-4 {
+        @include setBgColor($badgebg-4, $badgetext-4);
+      }
+
+      &.badge-5 {
+        @include setBgColor($badgebg-5, $badgetext-5);
+      }
+    }
+
+    .docname {
+      color: $neutral-950;
+      font-size: size(18);
+      font-weight: 600;
+      @include line-clamp;
+    }
+
+    .docpost {
+      color: rgba($neutral-950, 0.5);
+      font-size: size(14);
+      font-weight: 400;
+    }
+
+    .btn-viewprofile,
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      font-size: size(12);
+      height: size(36);
+      text-align: center;
+    }
+
+    .btn-viewprofile {
+      width: size(104);
+    }
+    
+
+    .btn-submit {
+      width: size(120);
+      padding: size(0);
+      
+      @include breakpoint(desktop1920) {
+        width: size(146);
+      }
+      
+      .text {
+        font-size: inherit;
+      }
+    }
+  }
+}
+
 .cardslider {
   width: size(306);
   background: $white;

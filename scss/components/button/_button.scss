@@ -57,6 +57,23 @@ button,
   }
 }
 
+.btn-viewprofile {
+  @include setBgColor($white, $blue-green-500);
+  @include border(solid, 2, $blue-green-500);
+  @include radius(8);
+  font-size: size(16);
+  font-weight: 500;
+  @include flex-center;
+  gap: size(8);
+  width: size(180);
+  height: size(56);
+  padding: size(16);
+
+  @include hover {
+    @include setBgColor($blue-green-500, $white);
+  }
+}
+
 .btn-checkup {
   @include setBgColor($blue-green-500, $white);
   @include border(solid, 2, $blue-green-500);
