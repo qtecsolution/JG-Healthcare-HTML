@@ -156,3 +156,26 @@
     }
   }
 }
+.bookappoinment {
+  background: $blue-green-700 url(../../assets/images/doctors/bookbg.png);
+  background-size: cover;
+  @include radius(36);
+  padding: size(30);
+  @include breakpoint(mobile576) {
+    padding: size(50);
+  }
+  @include breakpoint(tab992) {
+    padding: size(70);
+  }
+  .appoinmentContent {
+    @include flex-column;
+    gap: size(32);
+    align-items: start;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38px;
+    color: $white;
+  }
+}

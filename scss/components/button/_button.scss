@@ -176,3 +176,27 @@ button,
     @include square(183);
   }
 }
+.btn-book {
+  background: $white;
+  @include border(solid, 2, $white);
+  @include radius(8);
+  @include flex-center;
+  gap: size(8);
+  padding: size(10);
+  leading-trim: both;
+  text-edge: cap;
+  color: $blue-green-600;
+  font-weight: 600;
+  font-size: size(14);
+  line-height: size(22);
+  @include breakpoint(mobile576) {
+    padding: size(12);
+  }
+  @include breakpoint(tab992) {
+    min-width: size(250);
+  }
+  @include hover {
+    background-color: $blue-green-600;
+    color: $white;
+  }
+}
