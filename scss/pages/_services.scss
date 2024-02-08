@@ -38,7 +38,10 @@
       }
     }
     .textbox {
-      padding: size(40);
+      padding: size(22);
+      @include breakpoint(mobile576) {
+        padding: size(40);
+      }
       @include breakpoint(desktop1400) {
         padding: size(66) size(80);
       }
