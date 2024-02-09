@@ -1,6 +1,5 @@
-
-@use '../global' as *;
-@use '../partials' as *;
+@use "../global" as *;
+@use "../partials" as *;
 
 @keyframes rotating {
   from {
@@ -16,7 +15,7 @@
 }
 
 .updown {
-  animation: updown 1s cubic-bezier(.36,.07,.57,.99) infinite;
+  animation: updown 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
 }
 
 @keyframes updown {
@@ -32,3 +31,4 @@
     @include translateY(size(4));
   }
 }
+

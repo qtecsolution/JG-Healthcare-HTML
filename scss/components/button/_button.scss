@@ -200,3 +200,25 @@ button,
     color: $white;
   }
 }
+.contact-btn {
+  @include setBgColor($blue-green-500, $white);
+  text-align: center;
+  padding: size(8);
+  @include radius(8);
+  text-align: right;
+  leading-trim: both;
+  color: $white;
+  text-edge: cap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  @include border(solid, 4, $blue-green-500);
+  @include breakpoint(mobile576) {
+    padding: size(12) size(12);
+  }
+  @include hover {
+    @include setBgColor($white, $blue-green-500);
+  }
+}
