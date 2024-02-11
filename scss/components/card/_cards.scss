@@ -647,6 +647,7 @@
     @include single-radius(top, left, 24);
     @include single-radius(top, right, 24);
     position: relative;
+    height: size(264);
 
     img {
       @include wh100;
