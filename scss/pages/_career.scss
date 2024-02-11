@@ -84,12 +84,22 @@
     @include flex-between;
     align-items: center;
     padding: size(16);
+    @include radius(16);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: size(20);
     @include breakpoint(mobile576) {
       padding: size(24);
     }
+    @include breakpoint(mobile768) {
+      justify-content: space-between;
+    }
     .jobleft {
       @include flex-column;
-      gap: size(16);
+      gap: size(8);
+      @include breakpoint(mobile576) {
+        gap: size(16);
+      }
     }
     .top {
       @include flex;
@@ -120,10 +130,22 @@
         @include flex;
         flex-wrap: nowrap;
         gap: size(8);
+        .text {
+          font-size: size(16);
+          font-weight: 400;
+          line-height: size(24);
+          color: $neutral-400;
+        }
       }
       .time {
         @include flex;
         flex-wrap: nowrap;
+        .text {
+          font-size: size(16);
+          font-weight: 400;
+          line-height: size(24);
+          color: $neutral-400;
+        }
       }
     }
     .jobright {

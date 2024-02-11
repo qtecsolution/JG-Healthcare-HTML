@@ -222,3 +222,34 @@ button,
     @include setBgColor($white, $blue-green-500);
   }
 }
+
+.applynow {
+  @include setBgColor($blue-green-500, $white);
+  @include flex;
+  padding: size(10) size(14);
+  gap: size(10);
+  display: inline-flex;
+  @include radius(10);
+  width: size(180);
+  align-items: center;
+  justify-content: center;
+  @include border(solid, 5, $blue-green-500);
+  font-size: size(16);
+  font-style: normal;
+  font-weight: 500;
+  line-height: size(24);
+  svg {
+    path {
+      @include transitionsall;
+    }
+  }
+  @include hover {
+    @include setBgColor(transparent, $blue-green-500);
+
+    svg {
+      path {
+        stroke: $blue-green-500;
+      }
+    }
+  }
+}
