@@ -183,7 +183,8 @@
   &-body {
     min-height: 50vh;
     position: relative;
-    padding: size(300) size(30);
+    padding: size(250) size(30);
+    padding-bottom: size(120);
     overflow: hidden;
 
     .orbit-icon {
@@ -220,7 +221,6 @@
     }
 
     .orbit-wrap > li:hover ~ li ul {
-      border-color: red;
     }
 
     .orbit-wrap > li:hover ~ li ul li {
