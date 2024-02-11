@@ -102,6 +102,10 @@
 }
 
 .healthpackages {
+  padding-bottom: size(60);
+  @include breakpoint(tab992) {
+    padding-bottom: size(100);
+  }
   &-top {
     @include flex-column;
     gap: size(5);
