@@ -30,6 +30,103 @@
     }
   }
   &-body {
-    
+  }
+}
+.joinwithus {
+  padding: size(30) 0;
+  @include breakpoint(tab992) {
+    padding: size(60) 0;
+  }
+  &-content {
+    @include flex-column;
+    gap: size(36);
+    @include breakpoint(tab992) {
+      gap: size(48);
+    }
+  }
+  &-header {
+    @include flex-column;
+    gap: size(8);
+    align-items: center;
+    text-align: center;
+    padding: size(0) size(30);
+    .small-title {
+      color: $blue-green-500;
+      font-size: size(18);
+      font-weight: 600;
+      line-height: size(28);
+    }
+    .title {
+      color: $neutral-950;
+      text-align: center;
+      font-weight: 700;
+    }
+    .des {
+      color: $neutral-600;
+      font-size: size(16);
+      font-weight: 400;
+      line-height: size(22);
+      @include breakpoint(tab992) {
+        font-size: size(18);
+        line-height: size(30);
+      }
+    }
+  }
+  &-body {
+  }
+  .jobs {
+    @include flex;
+    flex-direction: column;
+    gap: size(24);
+  }
+  .job {
+    background: $neutral-50;
+    @include flex-between;
+    align-items: center;
+    padding: size(16);
+    @include breakpoint(mobile576) {
+      padding: size(24);
+    }
+    .jobleft {
+      @include flex-column;
+      gap: size(16);
+    }
+    .top {
+      @include flex;
+      align-items: center;
+      gap: size(10);
+    }
+    .title {
+      color: $neutral-950;
+      font-weight: 700;
+    }
+    .line {
+      height: size(28);
+      width: size(1);
+      background-color: $neutral-950;
+    }
+    .jobduration {
+      color: $neutral-400;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 600;
+      line-height: size(28);
+    }
+    .bottom {
+      @include flex;
+      align-items: center;
+      gap: size(12);
+      .location {
+        @include flex;
+        flex-wrap: nowrap;
+        gap: size(8);
+      }
+      .time {
+        @include flex;
+        flex-wrap: nowrap;
+      }
+    }
+    .jobright {
+    }
   }
 }
