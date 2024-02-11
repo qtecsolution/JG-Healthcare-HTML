@@ -236,8 +236,8 @@
     }
 
     .ring-0 {
-      width: 8em;
-      height: 8em;
+      width: 7em;
+      height: 7em;
       animation: clockwiseRotate 35s linear infinite;
     }
 
@@ -246,24 +246,24 @@
     }
 
     .ring-0 > *:nth-of-type(1) {
-      transform: rotate(95deg) translate(9.2em) rotate(-95deg);
+      transform: rotate(95deg) translate(7.5em) rotate(-95deg);
     }
 
     .ring-0 > *:nth-of-type(2) {
-      transform: rotate(190deg) translate(9.2em) rotate(-190deg);
+      transform: rotate(190deg) translate(7.5em) rotate(-190deg);
     }
 
     .ring-0 > *:nth-of-type(3) {
-      transform: rotate(285deg) translate(9.2em) rotate(-285deg);
+      transform: rotate(285deg) translate(7.5em) rotate(-285deg);
     }
 
     .ring-0 > *:nth-of-type(4) {
-      transform: rotate(380deg) translate(9.2em) rotate(-380deg);
+      transform: rotate(380deg) translate(7.5em) rotate(-380deg);
     }
 
     .ring-1 {
-      width: 18em;
-      height: 18em;
+      width: 15em;
+      height: 15em;
       animation: clockwiseRotate 30s linear infinite;
     }
 
@@ -272,22 +272,22 @@
     }
 
     .ring-1 > *:nth-of-type(1) {
-      transform: rotate(136.6666666667deg) translate(7em)
+      transform: rotate(136.6666666667deg) translate(6em)
         rotate(-136.6666666667deg);
     }
 
     .ring-1 > *:nth-of-type(2) {
-      transform: rotate(253.3333333333deg) translate(7em)
+      transform: rotate(253.3333333333deg) translate(6em)
         rotate(-253.3333333333deg);
     }
 
     .ring-1 > *:nth-of-type(3) {
-      transform: rotate(390deg) translate(7em) rotate(-390deg);
+      transform: rotate(390deg) translate(6em) rotate(-390deg);
     }
 
     .ring-2 {
-      width: 13em;
-      height: 13em;
+      width: 11.5em;
+      height: 11.5em;
       animation: clockwiseRotate 25s linear infinite;
     }
 
@@ -301,7 +301,7 @@
   } */
 
     .ring-2 > *:nth-of-type(2) {
-      transform: rotate(95deg) translate(4.3em) rotate(-95deg);
+      transform: rotate(95deg) translate(3em) rotate(-95deg);
     }
 
     /* .ring-2>*:nth-of-type(3) {
@@ -309,7 +309,7 @@
   } */
 
     .ring-2 > *:nth-of-type(4) {
-      transform: rotate(190deg) translate(4.3em) rotate(-190deg);
+      transform: rotate(190deg) translate(3em) rotate(-190deg);
     }
 
     /* 
@@ -318,7 +318,7 @@
   } */
 
     .ring-2 > *:nth-of-type(6) {
-      transform: rotate(285deg) translate(4.3em) rotate(-285deg);
+      transform: rotate(285deg) translate(3em) rotate(-285deg);
     }
 
     /* .ring-2>*:nth-of-type(7) {
@@ -326,7 +326,7 @@
   } */
 
     .ring-2 > *:nth-of-type(8) {
-      transform: rotate(380deg) translate(4.3em) rotate(-380deg);
+      transform: rotate(380deg) translate(3em) rotate(-380deg);
     }
 
     .ring-3 {
