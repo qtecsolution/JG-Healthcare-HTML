@@ -162,9 +162,9 @@
 
 .orbitanimation {
   background: linear-gradient(101deg, #10537c 0%, #47b43a 99.27%);
-  padding: size(40);
+  padding: size(40) size(0);
   @include breakpoint(tab992) {
-    padding: size(80);
+    padding: size(80) size(0);
   }
   &-content {
   }
@@ -183,8 +183,9 @@
   &-body {
     min-height: 50vh;
     position: relative;
-    padding: size(300) size(0);
+    padding: size(300) size(30);
     overflow: hidden;
+
     .orbit-icon {
       width: 1.6em;
       height: 1.6em;
@@ -391,6 +392,9 @@
     .orbit-center__icon {
       transform: rotateZ(-360deg);
       transition: all 300ms ease-in-out;
+      img {
+        @include circle;
+      }
     }
 
     .orbit-wrap > li.orbit-center:hover ~ li > ul {
