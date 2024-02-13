@@ -14,84 +14,6 @@
     <!-- CUSTOM-CSS -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-        .datepicker-wrapper {
-            /* overflow-x: auto; */
-        }
-
-        .ui-widget.ui-widget-content {
-            width: 100%;
-            border: none;
-        }
-
-        .ui-datepicker td {
-            padding: 5px !important;
-
-        }
-
-        .ui-datepicker td a {
-            background-color: #fff !important;
-            position: relative;
-            text-align: center;
-            padding: 10px 12px !important;
-            border: 0.962px solid #F1F1F1 !important;
-            border-radius: 8px;
-
-        }
-
-        .ui-datepicker td a.ui-state-active {
-
-            color: #5B5B5F;
-            transition: all .3s ease-in-out;
-
-        }
-
-        .ui-datepicker td a::before {
-            position: absolute;
-            content: '';
-            left: 5px;
-            top: 50%;
-            transform: translateY(-50%);
-            height: 14px;
-            width: 14px;
-            border: 1px solid #D9D9D9;
-            border-radius: 50%;
-        }
-
-        .ui-datepicker td a::after {
-            position: absolute;
-            content: '';
-            left: 8px;
-            height: 8px;
-            width: 8px;
-            border: 1px solid #1C94D1;
-            background: #1C94D1;
-            border-radius: 50%;
-            top: 50%;
-            transform: translateY(-50%);
-            opacity: 0;
-            transition: all .3s ease-in-out;
-        }
-
-        .ui-datepicker td a.ui-state-active::after {
-            opacity: 1;
-        }
-
-        @media (max-width: 576px) {
-            .ui-datepicker td {
-                padding: 3px !important;
-
-            }
-
-            .ui-datepicker td a {
-                text-align: right;
-                padding: 5px !important;
-                font-size: 13px !important;
-            }
-
-            #datepicker {}
-        }
-    </style>
 </head>
 
 <body>
@@ -312,7 +234,7 @@
     <!-- DOCTOR PROFILE START-->
     <section class="doctorprofile">
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-5">
                 <div class="col-lg-4 ">
                     <div class="doctorprofile-sidebar">
                         <figure class="doctorthumb">
@@ -329,10 +251,85 @@
                 </div>
                 <div class="col-lg-8 ">
                     <div class="doctorprofiledetails">
+                        <!-- booking form  -->
+                        <form action="" class="bookingform">
+                            <h5 class="formtitle">Patient Information </h5>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <input type="text" class="inputfield" placeholder="Patient Information "
+                                        autocomplete="off">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="inputfield" placeholder="Mobile Number"
+                                        autocomplete="off">
+                                </div>
+                                <div class="col-12">
+                                    <h5 class="formtitle">Select Available Date </h5>
+                                    <div class="datepicker-wrapper">
+                                        <div id="datepicker"></div>
+                                        <p id="selectedDate">Selected Date: </p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <h5 class="formtitle">Select Time</h5>
+                                </div>
+                                <div class="col-12">
+                                    <div class="times">
+                                        <div class="time">
+                                            <input type="radio" id="10" name="time" hidden>
+                                            <label for="10" class="time-lable">
+                                                10:00 AM
+                                            </label>
+                                        </div>
+                                        <div class="time">
+                                            <input type="radio" id="11" name="time" hidden>
+                                            <label for="11" class="time-lable">
+                                                11:00 AM
+                                            </label>
+                                        </div>
+                                        <div class="time">
+                                            <input type="radio" id="12" name="time" hidden>
+                                            <label for="12" class="time-lable">
+                                                12:00 PM
+                                            </label>
+                                        </div>
+                                        <div class="time">
+                                            <input type="radio" id="01" name="time" hidden>
+                                            <label for="01" class="time-lable">
+                                                01:00 PM
+                                            </label>
+                                        </div>
+                                        <div class="time">
+                                            <input type="radio" id="02" name="time" hidden>
+                                            <label for="02" class="time-lable">
+                                                02:00 PM
+                                            </label>
+                                        </div>
+                                    </div>
 
-                        <div class="datepicker-wrapper">
-                            <div id="datepicker"></div>
-                            <p id="selectedDate">Selected Date: </p>
+                                </div>
+                                <div class="col-12">
+                                    <a type="button" class="btn-submit w-100 mt-4">
+                                        <span class="text">Book Appointment</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                        <br>
+                        <!-- confirmation  -->
+                        <div class="confirm">
+                            <div class="confirm-content">
+                                <div class="left">
+                                    <span>
+                                        <img src="assets/icons/confirm/confirm.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <h5 class="title">Your Booking Has Been Confirmed </h5>
+                                    <p class="date">Wed , Thu , Sat 2 pm</p>
+                                    <p class="info">Patient Info: Nasir Uddin, 01760706361 </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
