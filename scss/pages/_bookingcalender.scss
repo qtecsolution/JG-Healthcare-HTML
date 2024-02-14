@@ -157,6 +157,30 @@
     .right {
       @include flex-column;
       gap: size(4);
+      .title {
+        color: var(--Neutral-Base-color-950, #19191A);
+        font-family: Inter;
+        font-size: 24.809px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 35.146px; /* 141.667% */
+      } 
+      .date {
+        color: var(--Neutral-500, #6A6B70);
+        font-family: Inter;
+        font-size: 16.539px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24.809px; /* 150% */
+      } 
+      .info {
+        color: var(--Neutral-500, #6A6B70);
+        font-family: Inter;
+        font-size: 13.438px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.674px; /* 153.846% */
+      }
     }
   }
 }
