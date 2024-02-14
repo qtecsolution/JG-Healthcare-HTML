@@ -389,6 +389,9 @@
   @include wh100;
 
   &-body {
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: stretch;
     .ratingtext {
       color: $neutral-950;
       font-size: size(16);
