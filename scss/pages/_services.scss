@@ -36,7 +36,7 @@
       .service-thumb {
         border-color: $blue-green-50;
       }
-    } 
+    }
     .textbox {
       padding: size(22);
       @include breakpoint(mobile576) {
@@ -48,6 +48,8 @@
       @include flex;
       flex-direction: column;
       gap: size(24);
+      justify-content: center;
+      height: 100%;
       .title {
         color: $neutral-950;
         font-weight: 700;
