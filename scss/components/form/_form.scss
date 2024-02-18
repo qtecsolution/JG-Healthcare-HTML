@@ -207,6 +207,10 @@
       width: size(232);
     }
 
+    @include breakpoint(desktop1200) {
+      width: size(300);
+    }
+
     .searchicon {
       @include square(19);
       @include flex-center;
